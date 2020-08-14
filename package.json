@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "an open source module based discord bot engine open for contributions",
   "main": "index.js",
+  "bin": {
+    "auric": "./index.js"
+  },
   "scripts": {},
   "repository": {
     "type": "git",

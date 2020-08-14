@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 process.argv.shift(); // node entry point
 process.argv.shift(); // node.exe
 let args = process.argv;
