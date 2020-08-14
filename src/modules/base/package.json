@@ -1,0 +1,11 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "base module for auric discord bot engine",
+  "author": "red;",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "rethinkdb": "^2.4.2",
+    "seedrandom": "^3.0.3"
+  }
+}

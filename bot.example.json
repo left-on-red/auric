@@ -1,0 +1,8 @@
+{
+    "name": "<bot name>",
+    "token": "<bot token>",
+    "version": "<version>",
+    "description": "<description>",
+    "tags": [],
+    "author": "<author>"
+}

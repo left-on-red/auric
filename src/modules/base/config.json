@@ -1,0 +1,41 @@
+{   
+    "gets": {
+        "bot": {
+            "username": "imports.client.user.username",
+            "id": "imports.client.user.id",
+            "discriminator": "'#' + imports.client.user.discriminator",
+            "avatar": "imports.client.user.avatarURL",
+            "status": "imports.client.user.presence.game.name",
+            "createdAt": "imports.client.user.createdAt.toString()"
+        },
+
+        "guild": {
+            "name": "imports.guild.name",
+            "id": "imports.guild.id",
+            "owner": "new Member(imports.guild.owner)",
+            "defaultRole": "new Role(imports.guild.defaultRole)",
+            "config": "guild.config",
+            "colors": "guild.colors",
+            "options": "guild.options",
+            "avatar": "imports.guild.iconURL"
+        },
+
+        "user": "new Member(imports.member)",
+        "channel": "new Channel(imports.channel)"
+    },
+
+    "sets": {
+        "bot": {
+            "status": "string"
+        },
+
+        "guild": {
+            "config": {
+                "prefix": "string"
+            },
+            
+            "colors": "color",
+            "options": "boolean"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "a template module for the auric discord bot engine",
+  "author": "red;",
+  "license": "GPL-3.0",
+  "dependencies": {}
+}

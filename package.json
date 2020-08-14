@@ -1,0 +1,30 @@
+{
+  "name": "auric",
+  "version": "1.0.0",
+  "description": "an open source module based discord bot engine open for contributions",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadeRed/auric.git"
+  },
+  "author": "red;",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/shadeRed/auric/issues"
+  },
+  "homepage": "https://github.com/shadeRed/auric#readme",
+  "dependencies": {
+    "array-map": "0.0.0",
+    "array-reduce": "0.0.0",
+    "discord.js": "^12.2.0",
+    "foreach": "^2.0.5",
+    "fs-extra": "^8.1.0",
+    "indexof": "0.0.1",
+    "isarray": "^2.0.5",
+    "moment": "^2.27.0",
+    "moment-duration-format": "^2.3.2",
+    "object-keys": "^1.1.1",
+    "terminal-kit": "^1.42.0"
+  }
+}

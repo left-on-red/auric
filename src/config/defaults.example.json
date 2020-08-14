@@ -1,0 +1,26 @@
+{
+    "guild": {
+        "prefix": "?",
+
+        "whitelist": {},
+        "blacklist": {},
+
+        "colors": {
+            "accent": "#D459A3"
+        },
+
+        "options": {
+            "errors": {
+                "unknownCommands": false
+            }
+        },
+
+        "members": {}
+    },
+
+    "user": {
+        "cooldowns": {}
+    },
+
+    "member": {}
+}
