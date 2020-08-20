@@ -1,7 +1,12 @@
 let fgcodes = Array.apply(null, new Array(256)).map(function(_, i) { return `\x1b[38;5;${i}m` });
 let bgcodes = Array.apply(null, new Array(256)).map(function(_, i) { return `\x1b[48;5;${i}m` });
 
-let colors = require('./../config/colors.json');
+let fs = require('fs');
+console.log(__dirname);
+
+let colors;
+if (fs.existsSync(`${__dirname}/../config/colors.json`)) { colors = require('./../config/colors.json') }
+else { colors = require('./../config/colors.example.json') }
 
 // refer to this for rgb scale reference:
 // https://www.npmjs.com/package/ansi-256-colors
