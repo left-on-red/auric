@@ -148,7 +148,8 @@ module.exports = async function(yes) {
         await exec('npm install');
         console.log(`installed master npm dependencies`);
         let modules = fs.readdirSync(`${fulldir}/src/modules`);
-        let toInstall = [];
+        let toInstall = ['base'];
+        await exec(`git clone https://github.com/shadeRed/auric-base-module.git src/modules/base`);
         for (let m = 0; m < modules.length; m++) { if (fs.existsSync(`${fulldir}/src/modules/${modules[m]}/package.json`)) { toInstall.push(modules[m]) } }
         for (let t = 0; t < toInstall.length; t++) {
             await exec(`cd src/modules/${toInstall[t]} && npm install && cd ../../../`);
