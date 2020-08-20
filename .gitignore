@@ -1,10 +1,8 @@
 node_modules/
 
 src/modules/*
-!src/modules/base
 !src/modules/template
 
-src/modules/base/package-lock.json
 src/modules/template/package-lock.json
 
 src/config/main.json

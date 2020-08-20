@@ -4,7 +4,7 @@ const prompt = require('./functions.js').prompt;
 const exec = require('./functions.js').exec;
 let variables = require('./variables');
 
-module.exports = async function(flags) {
+module.exports = async function(yes) {
     let fulldir = process.cwd().split('\\').join('/');
     let dir = fulldir.split('/')[fulldir.split('/').length-1];
 
@@ -19,7 +19,7 @@ module.exports = async function(flags) {
         let description = '';
         let author = '';
 
-        if (!flags.y) {
+        if (!yes) {
             console.log(variables.banner);
             console.log(`${variables.github}\n\n\n`);
             let isModule = false;

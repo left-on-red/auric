@@ -1,6 +1,6 @@
 {
   "name": "auric",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "an open source module based discord bot engine open for contributions",
   "main": "index.js",
   "bin": {
