@@ -2,7 +2,6 @@ let fgcodes = Array.apply(null, new Array(256)).map(function(_, i) { return `\x1
 let bgcodes = Array.apply(null, new Array(256)).map(function(_, i) { return `\x1b[48;5;${i}m` });
 
 let fs = require('fs');
-console.log(__dirname);
 
 let colors;
 if (fs.existsSync(`${__dirname}/../config/colors.json`)) { colors = require('./../config/colors.json') }

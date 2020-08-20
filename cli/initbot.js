@@ -126,7 +126,7 @@ module.exports = async function(yes) {
         let configFiles = fs.readdirSync(`${fulldir}/src/config/`);
         for (let c = 0; c < configFiles.length; c++) {
             if (configFiles[c].endsWith('.example.json')) {
-                fs.unlinkSync(`${fulldir}/src/config/${`${configFiles[c].split('.example.json')[0]}.json`}`);
+                if (fs.existsSync(`${fulldir}/src/config/${`${configFiles[c].split('.example.json')[0]}.json`}`)) { fs.unlinkSync(`${fulldir}/src/config/${`${configFiles[c].split('.example.json')[0]}.json`}`) }
                 fs.renameSync(`${fulldir}/src/config/${configFiles[c]}`, `${fulldir}/src/config/${`${configFiles[c].split('.example.json')[0]}.json`}`);
             }
         }
