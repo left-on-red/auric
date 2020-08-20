@@ -30,6 +30,7 @@ function clone(obj) {
 
 // TODO: possibly swap out rethinkdb for something more "known" such as mongodb
 module.exports = async function(imports) {
+    if (imports.data) { return }
     config = imports.config.data;
     defaults = clone(imports.config.defaults);
     imports.data = {
